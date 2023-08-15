@@ -1,0 +1,22 @@
+{
+    "name": "grilar/widget-generator",
+    "description": "Widget generator",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\WidgetGenerator\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/widget": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\WidgetGenerator\\Providers\\WidgetGeneratorServiceProvider"
+            ]
+        }
+    }
+}
